@@ -1,0 +1,67 @@
+<div class="panel panel-primary">
+  <div class="panel-heding">
+   {{tableHeading}}
+  </div>
+</div>
+<div class="panel-body">
+  <div class="row">
+    <div class="col-md-2">
+      filter By
+
+    </div>
+    <div class="col-md-4">
+      <input type="text" />
+   </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>filterBy</h3>
+      </div>
+    </div>
+   <div class="table-responsive">
+     <table class="table" *ngIf ='product && product.length'>
+       <thead>
+         <tr>
+           <th>
+             <button class="btn btn-primary">
+               show image
+             </button>
+           </th>
+           <th>productId</th>
+           <th>product</th>
+           <th>code</th>
+           <th>discribstion</th>
+           <th>avalilable</th>
+           <th>price</th>
+           <th>5 star rating</th>
+           <th>imgUrl</th>
+         </tr>
+       </thead>
+       <tbody>
+        <tr *ngFor='let pro of product'>
+          <td></td>
+          <td>{{pro.productId}}</td>
+          <td>{{pro.productName}}</td>
+          <td>{{pro.productCode}}</td>  
+          <td>{{pro.discribstion}}</td>
+          <td>{{pro.productDtae}}</td>
+          <td>{{pro.price}}</td>
+          <td>{{pro.startRating}}</td>
+          <td>{{pro.imgUrl}}</td>
+        </tr>
+       </tbody>
+     </table>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
