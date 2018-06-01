@@ -7,43 +7,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
    tableHeading: String = 'Product Tiltle';
+   // tslint:disable-next-line:no-inferrable-types
+   showImage: boolean = false;
+   listFilter: String = 'cart';
    product: any[] = [{
      'productId' : 2,
      'productName': 'preeti',
-     'productCode': 'rhyh234',
+     'productCode': 'RTEGTHFYR',
      'productDtae': 'march 18, 2016',
      'discribstion': 'verygood',
-     'price': 88787,
+     'price': 234,
      'startRating': 4,
-     'imgUrl': 'http://img url'
+     'imgUrl': 'https://www.freepik.com/free-photos-vectors/add-to-cart-button'
        },
        {
       'productId' : 2,
       'productName': 'preeti',
-      'productCode': 'rhyh234',
+      'productCode': 'RTEGTHFYR',
       'productDtae': 'march 18, 2016',
       'discribstion': 'verygood',
-      'price': 88787,
+      'price': 234,
       'startRating': 4,
-      'imgUrl': 'http://img url'
+      'imgUrl': 'https://www.freepik.com/free-photos-vectors/add-to-cart-button'
         },
    {
      'productId' : 2,
      'productName': 'preeti',
-     'productCode': 'rhyh234',
+     'productCode': 'RTEGTHFYR',
      'productDtae': 'march 18, 2016',
      'discribstion': 'verygood',
-     'price': 88787,
+     'price': 234,
      'startRating': 4,
-     'imgUrl': 'http://img url'
+     'imgUrl': 'https://www.freepik.com/free-photos-vectors/add-to-cart-button'
        },
   {
     'productId' : 2,
     'productName': 'preeti',
-    'productCode': 'rhyh234',
+    'productCode': 'RTEGTHFYR',
     'productDtae': 'march 18, 2016',
     'discribstion': 'verygood',
-    'price': 88787,
+    'price': 234,
     'startRating': 4,
     'imgUrl': 'http://img url'
       }
@@ -52,5 +55,8 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
   }
+public toggleImage(): void  {
+  this.showImage = !this.showImage ;
 
+}
 }
